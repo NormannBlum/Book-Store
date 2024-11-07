@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(3, 20, 27);
+  color: whitesmoke;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgb(13, 50, 64);
+  padding: 16px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    height: 64px;
+    width: 64px;
+}
