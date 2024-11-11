@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: rgb(13, 50, 64);
+  background-color: rgb(10, 40, 54);
   padding: 16px;
   width: 100vw;
   display: flex;
@@ -19,9 +19,150 @@ header {
 }
 
 .header-logo {
-    display: flex;
-    justify-content: center;
-    margin-right: 16px;
-    height: 64px;
-    width: 64px;
+  display: flex;
+  justify-content: center;
+  margin-right: 16px;
+  height: 64px;
+  width: 64px;
+}
+
+.book-main-container {
+  background-color: rgb(10, 40, 54);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 100%;
+  background: #106d8d;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(18,71,88,1) 0%, rgba(9,30,53,1) 92%);
+}
+
+.book-image {
+  height: 120px;
+  object-fit: cover;
+  margin: 24px;
+}
+
+.price-like-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.price-book {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.like-book {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.like-book img {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.likes img:hover {
+  cursor: pointer;
+}
+
+.send-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.send-icon:hover {
+  cursor: pointer;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 180px;
+  scrollbar-width: thin;
+  margin-top: 24px;
+}
+
+.comments-container h3 {
+  margin-left: 10px;
+}
+
+td {
+  vertical-align: top;
+  padding: 8px;
+}
+
+input {
+  width: 80%;
+  background-color: rgba(18, 71, 88, 1);
+  color: whitesmoke;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  height: 32px;
+  margin-top: 24px;
+}
+
+@media(max-width: 440px) {
+  .book-main-container {
+      width: 280px;
+  }
+
+  body {
+      font-size: 16px;
+  }
+
+  .price-book {
+    font-size: 20px;
+  }
+
+  .like-book {
+    font-size: 20px;
+  }
+
+  td {
+      padding: 2px;
+      font-size: 14px;
+  }
+
+  header h1 {
+      font-size: 24px;
+  }
 }
